@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 #include "data/config.h"
-#include "files/dir.h"
+#include "files/file_util.h"
 
 int main(int argc, char* argv[]) {
 

@@ -1,4 +1,4 @@
-#include "dir.h"
+#include "file_util.h"
 
 int read_files(char* directory) {
     DIR *d = opendir(directory); 
