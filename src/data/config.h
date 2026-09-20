@@ -2,15 +2,16 @@
 #define CONFIG_H
 
 #include <stdlib.h>
+#include <confuse.h>
 
-typedef struct config {
-    char* directories;
+typedef struct sync_conf {
+    char* directory;
     char* server_ip;
-    int server_port;
+    long int server_port;
     char* change_detection_style;
-    size_t checksum_window_size;
-} config_t;
+    long int checksum_window_size;
+} sync_conf_t;
 
-int setup_config(char* config_path, config_t* config);
+int setup_config(sync_conf_t* sync_conf);
 
 #endif // CONFIG_H
