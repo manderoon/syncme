@@ -10,5 +10,5 @@ int main(int argc, char* argv[]) {
 
     setup_config(&sync_conf);
 
-    read_dir_name(sync_conf.directory);
+    read_files(sync_conf.directory);
 }
